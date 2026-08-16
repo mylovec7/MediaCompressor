@@ -1,0 +1,19 @@
+UPLOAD TO GITHUB
+
+1. Extract this ZIP.
+2. Open the MediaCompressor folder.
+3. Create a GitHub repository named: MediaCompressor
+4. Upload EVERYTHING INSIDE this MediaCompressor folder to the ROOT of the repository.
+5. Commit to main.
+6. Open Actions -> Android Build -> Run workflow.
+
+Correct GitHub root:
+app/
+.github/
+build.gradle
+gradle.properties
+settings.gradle
+UPLOAD_TO_GITHUB.txt
+
+Do NOT upload the outer ZIP as a single file.
+Do NOT create an extra mc/Android/ nesting.
