@@ -1,0 +1,31 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.vr3th.mediacompressor'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.vr3th.mediacompressor'
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName '1.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+dependencies {
+    implementation 'com.fpliu.ndk.pkg.prefab.android.21:lame:3.100'
+    implementation 'com.squareup:gifencoder:0.10.1'
+    implementation 'com.tom-roush:pdfbox-android:2.0.27.0'
+    implementation 'com.gemalto.jp2:jp2-android:1.0.3'
+}
