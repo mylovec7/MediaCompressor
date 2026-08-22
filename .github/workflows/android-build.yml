@@ -1,0 +1,50 @@
+name: Android Build
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android 36 SDK
+        run: |
+          yes | sdkmanager --licenses >/dev/null || true
+          sdkmanager "platform-tools" "platforms;android-36" "build-tools;35.0.0"
+
+      - name: Install Gradle 8.11.1
+        run: |
+          set -e
+          curl -fL https://services.gradle.org/distributions/gradle-8.11.1-bin.zip -o /tmp/gradle.zip
+          sudo rm -rf /opt/gradle-8.11.1
+          sudo unzip -q /tmp/gradle.zip -d /opt
+          /opt/gradle-8.11.1/bin/gradle --version
+
+      - name: Build debug APK
+        run: |
+          set -e
+          /opt/gradle-8.11.1/bin/gradle --no-daemon --stacktrace :app:assembleDebug
+
+      - name: Upload debug APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: MediaCompressor-debug
+          path: app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
