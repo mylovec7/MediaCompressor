@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="Theme.MediaCompressor" parent="android:theme.Material.NoActionBar">
-        <item name="android:statusBarColor">#121214</item>
-        <item name="android:navigationBarColor">#121214</item>
-        <item name="android:windowBackground">#121214</item>
-    </style>
-</resources>
