@@ -1,3 +1,0 @@
-package com.vr3th.mediacompressor.ui.theme
-import androidx.compose.material3.Typography;import androidx.compose.ui.text.TextStyle;import androidx.compose.ui.text.font.FontFamily;import androidx.compose.ui.text.font.FontWeight;import androidx.compose.ui.unit.sp
-val Typography=Typography(titleLarge=TextStyle(FontFamily.SansSerif,FontWeight.Bold,22.sp,color=OffWhite),titleMedium=TextStyle(FontFamily.SansSerif,FontWeight.SemiBold,17.sp,color=OffWhite),bodyLarge=TextStyle(FontFamily.SansSerif,fontSize=15.sp,color=OffWhite),bodyMedium=TextStyle(FontFamily.SansSerif,fontSize=13.sp,color=TextMuted),labelSmall=TextStyle(FontFamily.Monospace,FontWeight.Medium,11.sp,color=DustyPink))
