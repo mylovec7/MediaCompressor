@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="charcoal_black">#121214</color>
-    <color name="charcoal_surface">#1A1A1E</color>
-    <color name="dusty_pink">#DDA7A5</color>
-    <color name="dusty_pink_dark">#C88A8A</color>
-    <color name="off_white">#F5F5F7</color>
-    <color name="text_secondary">#9E9EA7</color>
-</resources>
