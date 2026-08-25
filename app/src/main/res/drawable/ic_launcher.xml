@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Abstract Cyber-Hacker "Data Slicer" launcher icon.
+  Pure vector, ~400 bytes of path data, zero raster assets.
+  Motif: terminal compression brackets "> █ <" plus a horizontal
+  glitch/breach line through a magenta core, on a dark matte plate.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Dark matte terminal plate -->
+    <path
+        android:fillColor="#0F0E17"
+        android:pathData="M0,0h108v108h-108z" />
+
+    <!-- Left chevron ">" (compression bracket, open) -->
+    <path
+        android:fillColor="#F1F5F9"
+        android:pathData="M30,30 L46,54 L30,78 L38,78 L54,54 L38,30 Z" />
+
+    <!-- Right chevron "<" (compression bracket, closed / mirrored) -->
+    <path
+        android:fillColor="#F1F5F9"
+        android:pathData="M78,30 L70,30 L54,54 L70,78 L78,78 L62,54 Z" />
+
+    <!-- Center solid block "█" -->
+    <path
+        android:fillColor="#FF2E93"
+        android:pathData="M49,44 h10 v20 h-10 z" />
+
+    <!-- Horizontal severed signal / glitch breach line -->
+    <path
+        android:fillColor="#FF65A3"
+        android:pathData="M14,52 h26 v4 h-26 z" />
+    <path
+        android:fillColor="#FF65A3"
+        android:pathData="M68,52 h26 v4 h-26 z" />
+
+</vector>
