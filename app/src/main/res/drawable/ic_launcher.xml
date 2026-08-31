@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Apex Breach glyph: inward-fang chevrons plus severed core, plus crosshair nodes -->
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="108dp" android:height="108dp"
-    android:viewportWidth="108" android:viewportHeight="108">
-<path android:fillColor="#07060B" android:pathData="M0,0h108v108h-108z"/>
-<path android:fillColor="#00FF9D" android:pathData="M14,26L28,54L14,82L20,82L34,54L20,26ZM26,26L40,54L26,82L32,82L46,54L32,26ZM94,26L80,54L94,82L88,82L74,54L88,26ZM82,26L68,54L82,82L76,82L62,54L76,26ZM46,46h9v8h-9zM53,54h9v8h-9zM51,8h6v6h-6zM51,94h6v6h-6z"/>
-</vector>
